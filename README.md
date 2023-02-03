@@ -10,6 +10,11 @@ It was tested (for the most) on picture with around 200x200px ratio, it get slow
 At the moment, the output's textbox for the ascii-art can not be justify, it may looks warped, but if you paste the ascii-art on something else likes the notepad<br>
 you will see that it is done correctly
 
+# How to run the program
+
+You have to download the source code, i used Visual Studio 2019 for building and running the project <br>
+It's a windows form project
+
 # some examples
 
 a very shrinked version of the Statue of Liberty
