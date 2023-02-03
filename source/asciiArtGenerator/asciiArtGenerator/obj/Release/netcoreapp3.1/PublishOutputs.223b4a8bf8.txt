@@ -1,0 +1,5 @@
+C:\Users\david\Desktop\asciiArtGenerator.exe
+C:\Users\david\Desktop\asciiArtGenerator.dll
+C:\Users\david\Desktop\asciiArtGenerator.deps.json
+C:\Users\david\Desktop\asciiArtGenerator.runtimeconfig.json
+C:\Users\david\Desktop\asciiArtGenerator.pdb
