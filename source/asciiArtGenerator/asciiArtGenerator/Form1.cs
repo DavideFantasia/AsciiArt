@@ -17,10 +17,10 @@ namespace asciiArtGenerator
         public const string charScale = "$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/\\|()1{}[]?-_+~<>i!lI;:,\" ^`. ";
         //getting by the expressione charScale.lenght / 256
         public double scaleFactor = 0.2705882353;
-        public int contrastTrashold = 10;
+        public int contrastTrashold = 25;
         //file size scaler
         //needs to be scalable based on the size of file
-        public int scale = 5;
+        public int scale = 3;
 
         public Form1()
         {
@@ -44,8 +44,12 @@ namespace asciiArtGenerator
             }else{
                 Bitmap img = new Bitmap((Bitmap)pictureBox1.Image);
                 SetContrast(img,contrastTrashold);
-                string asciiArt = processImage(new Bitmap(img, new Size(img.Width / scale, img.Height / scale)));
-                textBox1.Font = new Font(textBox1.Font.FontFamily, ((img.Width/scale)/(img.Height/scale)));
+                if(img.Width > 200 || img.Height > 200)
+                {
+                    img = new Bitmap(img, new Size(img.Width / scale, img.Height / scale));
+                }
+                string asciiArt = processImage(img);
+                textBox1.Font = new Font(textBox1.Font.FontFamily, 2.5f );
                 textBox1.Text = asciiArt;
             }
         }

@@ -55,10 +55,11 @@ namespace asciiArtGenerator
             this.textBox1.Location = new System.Drawing.Point(408, 12);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
+            this.textBox1.PlaceholderText = "This system works best with photo with ~200 x ~200";
             this.textBox1.ReadOnly = true;
+            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBox1.Size = new System.Drawing.Size(380, 426);
             this.textBox1.TabIndex = 1;
-            this.textBox1.Text = "Works best with PixelArt and low-res images";
             this.textBox1.WordWrap = false;
             // 
             // button1
